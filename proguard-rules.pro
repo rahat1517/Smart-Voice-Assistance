@@ -1,1 +1,1 @@
-# Add your rules here.
+# No special rules

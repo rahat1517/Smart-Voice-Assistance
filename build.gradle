@@ -1,13 +1,13 @@
 plugins {
-    id 'com.android.application'
+    id "com.android.application"
 }
 
 android {
-    namespace "com.example.rahatassistant"
+    namespace "com.voiceassistant.app"
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.rahatassistant"
+        applicationId "com.voiceassistant.app"
         minSdk 23
         targetSdk 34
         versionCode 1
@@ -17,7 +17,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
         }
     }
 
@@ -28,7 +28,11 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.11.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    implementation "com.google.android.material:material:1.11.0"
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+
+    // TensorFlow Lite
+    implementation "org.tensorflow:tensorflow-lite:2.14.0"
+    implementation "org.tensorflow:tensorflow-lite-support:0.4.4"
 }
