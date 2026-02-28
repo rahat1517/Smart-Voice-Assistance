@@ -1,0 +1,9 @@
+{
+  "label2idx": {
+    "UNKNOWN": 0
+  },
+  "idx2label": {
+    "0": "UNKNOWN"
+  },
+  "num_classes": 1
+}

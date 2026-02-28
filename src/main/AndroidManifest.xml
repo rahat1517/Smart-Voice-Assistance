@@ -1,32 +1,55 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-            <uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.VIBRATE" />
-<uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <!-- 🔎 Android 11+ package visibility (ALL launcher apps) -->
+    <queries>
+        <!-- সব launcher app detect করার জন্য -->
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+
+        <!-- Browser support -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <!-- 🎤 Voice -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 📞 Call -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- 🔦 Flash -->
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 📶 Network -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 🔔 Foreground -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
 
     <application
         android:allowBackup="true"
-        android:label="@string/app_name"
+        android:label="Voice Assistant BD"
+        android:icon="@drawable/ic_launcher_foreground"
         android:supportsRtl="true"
-        android:theme="@style/Theme.RahatAssistant">
+        android:theme="@style/Theme.VoiceAssistantBD">
+
+        <activity android:name=".TrainingActivity" />
 
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
-        <service
-            android:name=".service.VoiceAssistantService"
-            android:exported="false"
-            android:foregroundServiceType="microphone" />
     </application>
-
 </manifest>

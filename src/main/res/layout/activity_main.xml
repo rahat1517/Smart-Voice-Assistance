@@ -1,33 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="16dp"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootScroll"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#0D1117">
 
-    <TextView
-        android:id="@+id/statusTv"
-        android:text="Ready"
-        android:textSize="18sp"
+    <LinearLayout
+        android:id="@+id/root"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <Button
-        android:id="@+id/startBtn"
-        android:text="Start Listening"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <!-- AI status -->
+        <TextView
+            android:id="@+id/tvAIStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⏳ AI Model loading..."
+            android:textColor="#8B949E"
+            android:textSize="14sp"
+            android:paddingBottom="8dp" />
 
-    <Button
-        android:id="@+id/stopBtn"
-        android:text="Stop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <!-- Main status -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="বলুন..."
+            android:textColor="#58A6FF"
+            android:textSize="18sp"
+            android:paddingBottom="10dp" />
 
-    <Button
-        android:id="@+id/testVibeBtn"
-        android:text="Test Vibrate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <!-- Recognized text -->
+        <TextView
+            android:id="@+id/tvRecognized"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+        android:textColor="#E6EDF3"
+        android:textSize="16sp"
+        android:paddingBottom="8dp" />
 
-</LinearLayout>
+        <!-- Response text -->
+        <TextView
+            android:id="@+id/tvResponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready ✅"
+            android:textColor="#3FB950"
+            android:textSize="16sp"
+            android:paddingBottom="14dp" />
+
+        <!-- Mic ring area -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="220dp"
+                android:layout_height="220dp">
+
+                <View
+                    android:id="@+id/ringOuter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#1F6FEB"
+                    android:alpha="0.25" />
+
+                <View
+                    android:id="@+id/ringMiddle"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_gravity="center"
+                    android:background="#1F6FEB"
+                    android:alpha="0.35" />
+
+                <ImageButton
+                    android:id="@+id/btnMic"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:layout_gravity="center"
+                    android:background="#238636"
+                    android:contentDescription="Mic"
+                    android:src="@android:drawable/ic_btn_speak_now" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap mic  speak"
+                android:textColor="#8B949E"
+                android:textSize="12sp"
+                android:paddingTop="8dp" />
+        </LinearLayout>
+
+        <!-- Buttons row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="6dp">
+
+            <Button
+                android:id="@+id/btnTraining"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Training" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/btnFlash"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Flash" />
+        </LinearLayout>
+
+        <!-- Buttons row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="6dp">
+
+            <Button
+                android:id="@+id/btnWifi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="WiFi" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/btnVolUp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vol +" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/btnVolDown"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vol -" />
+        </LinearLayout>
+
+        <!-- History title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:textColor="#E6EDF3"
+            android:textSize="14sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="6dp" />
+
+        <!-- History container -->
+        <LinearLayout
+            android:id="@+id/historyContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp" />
+
+    </LinearLayout>
+</ScrollView>

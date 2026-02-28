@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Commands Trainer"
+        android:textColor="@color/fg"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etCommandPhrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phrase (e.g., call ammy)"
+        android:textColor="@color/fg"
+        android:textColorHint="#8B949E"
+        android:backgroundTint="@color/accent"
+        android:padding="12dp"/>
+
+    <EditText
+        android:id="@+id/etCommandAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Action (e.g., SAY:Hello / OPEN_APP:pkg / WIFI_ON)"
+        android:textColor="@color/fg"
+        android:textColorHint="#8B949E"
+        android:backgroundTint="@color/accent"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnAddCommand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Command"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/good"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saved Commands"
+        android:textColor="@color/fg"
+        android:textStyle="bold"
+        android:paddingTop="14dp"
+        android:paddingBottom="6dp"/>
+
+    <LinearLayout
+        android:id="@+id/savedCommandsList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+{
+  "word2idx": {
+    "<PAD>": 0,
+    "<UNK>": 1
+  },
+  "vocab_size": 2,
+  "max_len": 20
+}
