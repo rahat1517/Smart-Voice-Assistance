@@ -1,0 +1,123 @@
+text,label
+ফ্ল্যাশ চালু কর,FLASH_ON
+ফ্ল্যাশ অন কর,FLASH_ON
+টর্চ অন কর,FLASH_ON
+টর্চটা চালু কর,FLASH_ON
+টর্চ চালু করে দাও,FLASH_ON
+ফোনের ফ্ল্যাশ অন কর,FLASH_ON
+আলো জ্বালাও,FLASH_ON
+আলো চালু কর,FLASH_ON
+ফ্ল্যাশটা জ্বালাও,FLASH_ON
+টর্চ জ্বালিয়ে দাও,FLASH_ON
+ফ্ল্যাশ খুলে দাও,FLASH_ON
+টর্চ চালু করো,FLASH_ON
+ফ্ল্যাশ অন করে দাও,FLASH_ON
+টর্চ অন করে দাও,FLASH_ON
+লাইট অন কর,FLASH_ON
+ফ্ল্যাশ বন্ধ কর,FLASH_OFF
+ফ্ল্যাশ অফ কর,FLASH_OFF
+টর্চ অফ কর,FLASH_OFF
+টর্চটা বন্ধ কর,FLASH_OFF
+ফোনের ফ্ল্যাশ বন্ধ কর,FLASH_OFF
+আলো নিভাও,FLASH_OFF
+আলো বন্ধ কর,FLASH_OFF
+ফ্ল্যাশটা নিভাও,FLASH_OFF
+টর্চ নিভিয়ে দাও,FLASH_OFF
+ফ্ল্যাশ অফ করে দাও,FLASH_OFF
+টর্চ বন্ধ করে দাও,FLASH_OFF
+লাইট অফ কর,FLASH_OFF
+টর্চটা অফ করো,FLASH_OFF
+
+ওয়াইফাই চালু কর,WIFI_ON
+ওয়াইফাই অন কর,WIFI_ON
+wifi অন কর,WIFI_ON
+ওয়াই ফাই অন কর,WIFI_ON
+ওয়াইফাই খুলে দাও,WIFI_ON
+ওয়াইফাই সেটিংস খোল,WIFI_ON
+wifi settings খোল,WIFI_ON
+নেট চালু কর,WIFI_ON
+ইন্টারনেট চালু কর,WIFI_ON
+ওয়াইফাই কানেক্ট কর,WIFI_ON
+ওয়াইফাই অন করে দাও,WIFI_ON
+নেট অন কর,WIFI_ON
+ওয়াইফাই বন্ধ কর,WIFI_OFF
+ওয়াইফাই অফ কর,WIFI_OFF
+wifi অফ কর,WIFI_OFF
+ওয়াই ফাই অফ কর,WIFI_OFF
+নেট বন্ধ কর,WIFI_OFF
+ইন্টারনেট বন্ধ কর,WIFI_OFF
+ওয়াইফাই অফ করে দাও,WIFI_OFF
+ওয়াইফাই বন্ধ করে দাও,WIFI_OFF
+
+ভলিউম বাড়াও,VOLUME_UP
+ভলিউম বাড়িয়ে দাও,VOLUME_UP
+ভলিউম একটু বাড়াও,VOLUME_UP
+সাউন্ড বাড়াও,VOLUME_UP
+আওয়াজ বাড়াও,VOLUME_UP
+গানটার ভলিউম বাড়াও,VOLUME_UP
+ভলিউম আপ,VOLUME_UP
+volume up,VOLUME_UP
+সাউন্ড আপ কর,VOLUME_UP
+আওয়াজ বেশি কর,VOLUME_UP
+ভলিউম উচ্চ কর,VOLUME_UP
+আরেকটু ভলিউম বাড়াও,VOLUME_UP
+ভলিউম কমাও,VOLUME_DOWN
+ভলিউম কমিয়ে দাও,VOLUME_DOWN
+ভলিউম একটু কমাও,VOLUME_DOWN
+সাউন্ড কমাও,VOLUME_DOWN
+আওয়াজ কমাও,VOLUME_DOWN
+ভলিউম ডাউন,VOLUME_DOWN
+volume down,VOLUME_DOWN
+সাউন্ড ডাউন কর,VOLUME_DOWN
+আওয়াজ নিচু কর,VOLUME_DOWN
+আরেকটু ভলিউম কমাও,VOLUME_DOWN
+মিউট কর,VOLUME_MUTE
+ভলিউম মিউট কর,VOLUME_MUTE
+সাউন্ড মিউট কর,VOLUME_MUTE
+চুপ কর,VOLUME_MUTE
+নীরব কর,VOLUME_MUTE
+সাইলেন্ট কর,VOLUME_MUTE
+mute,VOLUME_MUTE
+সাউন্ড অফ কর,VOLUME_MUTE
+আওয়াজ বন্ধ কর,VOLUME_MUTE
+ভলিউম বন্ধ কর,VOLUME_MUTE
+
+আম্মুকে কল কর,CALL_MOM
+আম্মু কল,CALL_MOM
+মাকে কল কর,CALL_MOM
+মা কে ফোন কর,CALL_MOM
+আম্মুকে ফোন কর,CALL_MOM
+মাকে ফোন দাও,CALL_MOM
+mom কে কল কর,CALL_MOM
+mom call,CALL_MOM
+মামিকে কল কর,CALL_MOM
+মাকে ডায়াল কর,CALL_MOM
+আব্বুকে কল কর,CALL_DAD
+আব্বু কল,CALL_DAD
+বাবাকে কল কর,CALL_DAD
+বাবা কে ফোন কর,CALL_DAD
+আব্বুকে ফোন কর,CALL_DAD
+বাবাকে ফোন দাও,CALL_DAD
+dad কে কল কর,CALL_DAD
+dad call,CALL_DAD
+বাবাকে ডায়াল কর,CALL_DAD
+আব্বুকে ডায়াল কর,CALL_DAD
+
+রাহাতকে কল কর,CALL_CONTACT
+রাহাতকে ফোন কর,CALL_CONTACT
+তানভীরকে কল কর,CALL_CONTACT
+মাহিকে কল কর,CALL_CONTACT
+নাবিলকে কল কর,CALL_CONTACT
+রাহাতকে ডায়াল কর,CALL_CONTACT
+রাহাতকে কল দাও,CALL_CONTACT
+ফাহিমকে কল কর,CALL_CONTACT
+সাদকে কল কর,CALL_CONTACT
+কল কর,CALL_CONTACT
+ফোন কর,CALL_CONTACT
+একটা কল দাও,CALL_CONTACT
+কাউকে কল কর,CALL_CONTACT
+একজনকে ফোন কর,CALL_CONTACT
+call someone,CALL_CONTACT
+dial contact,CALL_CONTACT
+call rahat,CALL_CONTACT
+call tanvir,CALL_CONTACT
